@@ -1,10 +1,10 @@
 import React, {useState, useEffect} from "react"
 
-const Movie = () => {
+const MovieDetail = () => {
     return (
 
     )
 }
 
-export default Movies
+export default MovieDetail
 

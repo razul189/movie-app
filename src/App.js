@@ -4,6 +4,7 @@ import './stylesheets/App.css';
 import Home from './Home'
 import Movies from './Movies'
 import NavBar from "./NavBar"
+import MovieDetail from "./MovieDetail"
 
 const App = () => {
     
@@ -13,7 +14,8 @@ const App = () => {
             <div className = "App">
                 <Switch>
                     <Route exact path = "/" component= {Home}/>
-                    <Route exact path = "/Movies" component = {Movies}/>
+                    <Route exact path = "/movies" component = {Movies}/>
+                    <Route exact path ="/movies/:id" component={MovieDetail}/>
                 </Switch>
             </div>
         </Router>
