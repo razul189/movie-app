@@ -1,6 +1,6 @@
 
 import React, {useEffect, useState} from "react"
-
+import {Link} from 'react-router-dom'
 
 const Movies = () => {
     
@@ -16,13 +16,20 @@ const Movies = () => {
     }, [])
 
     
-    const moviesList = movies.map((movie) => <li key={movie.id}>{movie.title}</li> );
+    const moviesList = movies.map((movie) => ( 
+    <div key={movie.id}>
+        <Link className="movie-link" to={`/movies/${movie.id}`}> 
+        <li><strong>{movie.title}</strong></li>
+        </Link>
+    </div> 
+    ))
 
     
     return (
         <div>
             <h1> My Movies</h1>
             <hr/>
+            <h2 className="titles"> Titles</h2>
             {moviesList}
         </div>
     )
