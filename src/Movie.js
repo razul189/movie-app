@@ -7,3 +7,4 @@ const Movie = () => {
 }
 
 export default Movies
+

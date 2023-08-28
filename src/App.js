@@ -6,6 +6,7 @@ import Movies from './Movies'
 import NavBar from "./NavBar"
 
 const App = () => {
+    
     return (
         <Router>
             <NavBar/>
