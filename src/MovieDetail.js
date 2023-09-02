@@ -1,10 +1,11 @@
-import React, { useEffect, useState } from "react";
-import { useParams, useHistory } from "react-router-dom";
+import React, { useEffect, useState } from 'react';
+import { useHistory, useRouteMatch } from 'react-router-dom';
 
-const MovieDetail = ({ onDeleteMovie }) => {
-  const { id } = useParams();
-  const [movie, setMovie] = useState(null);
-  const history = useHistory();
+const MovieDetail = () => {
+  const history = useHistory()
+  const match = useRouteMatch()
+  const id = match.params.id // Grabbing the id from the route match
+  const [movie, setMovie] = useState(null)
 
   useEffect(() => {
     fetch(`http://localhost:3000/movies/${id}`)
@@ -17,12 +18,10 @@ const MovieDetail = ({ onDeleteMovie }) => {
   const handleDelete = () => {
     fetch(`http://localhost:3000/movies/${id}`, {
       method: 'DELETE',
-    })
-    .then(() => {
-      onDeleteMovie(id);  // Update state in parent component
-      history.push("/movies");  // Navigate back to the movies list
-    })
-  }
+    }).then(() => {
+      history.push('/movies');
+    });
+  };
 
   if (!movie) {
     return <div>Loading...</div>;
@@ -39,7 +38,8 @@ const MovieDetail = ({ onDeleteMovie }) => {
   );
 };
 
-export default MovieDetail;
+export default MovieDetail
+
 
 // movie details for db.json
 // {
