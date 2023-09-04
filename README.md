@@ -48,6 +48,6 @@ Open http://localhost:3000 to view it in the browser.
 
 This project was developed by a software engineering student at Flatiron School. The purpose of this project was to explore the various functionalities React offers, such as component-based architecture, reusability, and state management.
 
-## image source
+## Image Source
 
 istockphoto.com
