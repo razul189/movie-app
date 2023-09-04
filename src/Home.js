@@ -9,7 +9,7 @@ const Home = () => {
             <h3 className="home-subtitle">Welcome To Film-Folio!</h3>
             <div className="image-container">
                 <img 
-                 src="https://images.pexels.com/photos/436413/pexels-photo-436413.jpeg?auto=compress&cs=tinysrgb&w=800"
+                 src="https://media.istockphoto.com/id/171311106/photo/retro-theater.jpg?s=612x612&w=0&k=20&c=yWTyaE11XonOiiEI-R4_EfxUHScrTGZHek7JcekNGyM="
                  alt="Film Illustration" 
                  className="center-image" 
                 /> 

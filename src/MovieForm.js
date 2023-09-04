@@ -16,8 +16,8 @@ const MovieForm = () => {
     setMovie({
       ...movie,
       [e.target.name]: e.target.value,
-    });
-  };
+    })
+  }
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -30,8 +30,8 @@ const MovieForm = () => {
     })
       .then((response) => response.json())
       .then((data) => {
-        console.log('Success:', data);
-        history.push('/movies') // Redirect to the movies page after successfully adding a movie
+        console.log('Success:', data)
+        history.push('/movies') 
       })
       .catch((error) => {
         console.error('Error:', error);

@@ -27,9 +27,9 @@ const Movies = () => {
     
     return (
         <div className="movies-container">
-            <h1 className="movies-title"> My Movies </h1> {/* updated className here */}
+            <h1 className="movies-title"> My Movies </h1> 
             <hr/>
-            <h2 className="movies-list"> Titles</h2> {/* updated className here */}
+            <h2 className="movies-list"> Titles</h2> 
             {moviesList}
         </div>
     )
