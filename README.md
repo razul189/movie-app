@@ -1,8 +1,8 @@
-# filmFolio 
+# Film-Folio 
 
 ## Overview
 
-filmFolio is a web application built for movie lovers to keep track of their favorite films. Whether you're looking for action-packed blockbusters, thought-provoking films, or timeless classics, filmFolio has got you covered!
+Film-Folio is a web application built for movie lovers to keep track of their favorite films. Whether you're looking for action-packed blockbusters, thought-provoking films, or timeless classics, filmFolio has got you covered!
 
 ## Features
 
