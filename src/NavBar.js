@@ -1,66 +1,16 @@
-// import React from 'react';
-// import {NavLink} from "react-router-dom"
-
-
-// const linkStyles = {
-//   display: "inline-block",
-//   width: "50px",
-//   padding: "12px",
-//   margin: "0 6px 6px",
-//   background: "black",
-//   textDecoration: "none",
-//   color: "white",
-// };
-
-// const NavBar = () => {
-//   return (
-//     <div className= "navbar" >
-//       <NavLink to = "/"
-//       exact 
-//       style={linkStyles}
-//       activeStyle={{
-//         background: "darkblue",
-//       }}
-//       >
-//         Home
-//       </NavLink>
-//       <NavLink to = "/movies"
-//       exact
-//       style={linkStyles}
-//       activeStyle={{
-//         background: "darkblue",
-//       }}
-//       >
-//         Movies
-//       </NavLink>
-//       <NavLink to = "/movies/new"
-//       exact
-//       style={linkStyles}
-//       activeStyle={{
-//         background: "darkblue",
-//       }}
-//       >
-//         Add Movie
-//       </NavLink>
-//     </div>
-//   )
-// }
-
-// export default NavBar
-
 import React from 'react';
 import { NavLink } from "react-router-dom";
 
 const linkStyles = {
   display: "inline-block",
-  width: "100px",  // Adjusted from 50px for better spacing
+  width: "100px",  
   padding: "12px",
-  margin: "0 12px",  // Adjusted for better spacing
-  background: "#333",  // Darker background for better contrast
+  margin: "0 12px",  
+  background: "#333",  
   textDecoration: "none",
   color: "white",
-  borderRadius: "4px",  // Rounded corners
-  textAlign: "center",  // Center-aligned text
+  borderRadius: "4px", 
+  textAlign: "center", 
 };
 
 const activeLinkStyles = {
@@ -98,6 +48,14 @@ const NavBar = () => {
         activeStyle={activeLinkStyles}
       >
         Add Movie
+      </NavLink>
+      <NavLink 
+        to="/about" 
+        exact 
+        style={linkStyles} 
+        activeStyle={activeLinkStyles}
+      >
+        About
       </NavLink>
     </div>
   );

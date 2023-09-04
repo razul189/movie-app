@@ -19,6 +19,7 @@ const App = () => {
           <Route exact path="/movies" component={() => <Movies />} />
           <Route exact path= "/movies/new" component={MovieForm}/>
           <Route exact path="/movies/:id" component={() => <MovieDetail />} />
+          <Route path="/about" component={About} />
         </Switch>
       </div>
     </Router>
