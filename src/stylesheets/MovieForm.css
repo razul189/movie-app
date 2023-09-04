@@ -1,0 +1,60 @@
+    .movie-form-container {
+    text-align: center;
+    color: white;
+    padding: 20px;
+}
+
+.movie-form-label {
+    font-size: 24px;
+    display: block;
+    margin-bottom: 10px;
+}
+  
+.movie-form-input {
+    font-size: 18px;
+    width: 80%;
+    padding: 10px;
+    margin-bottom: 20px;
+}
+  
+.movie-form-button {
+    background-color: rgb(35, 7, 170);
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+}
+
+.movie-form-labels {
+    font-family: "aachen-bold";
+    font-weight: 100;
+    font-size: 30px;
+    color: rgb(220, 172, 51);
+    border-color: black;
+    -webkit-text-stroke: 2px black;
+}
+
+.h1-title {
+    font-family: "aachen-bold";
+    font-weight: 100;
+    font-size: 50px;
+    color: rgb(229, 179, 51);
+    border-color: black;
+    -webkit-text-stroke: 2px black;    
+}
+
+.input-text {
+    font-family: "Press Start 2P";
+    font-size: 11px;
+}
+
+.synopsis {
+    width: 500px;
+    height: 100px;
+    font-family: "Press Start 2P";
+    font-size: 11px;
+}
+
+.input-text {
+    width: 500px;
+    height: 20px;
+}

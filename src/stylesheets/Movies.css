@@ -1,0 +1,26 @@
+  .movies-container {
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .movies-title {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .movies-list {
+    font-size: 24px;
+    color: white;
+    text-decoration: none;
+  }
+  
+  .movie-link {
+    color: white;
+    text-decoration: none;
+  }
+  
+  .movie-link:hover {
+    color: gold;
+  }
+  

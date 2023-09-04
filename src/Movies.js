@@ -1,4 +1,4 @@
-
+import './stylesheets/Movies.css'
 import React, {useEffect, useState} from "react"
 import {Link} from 'react-router-dom'
 
@@ -26,7 +26,7 @@ const Movies = () => {
 
     
     return (
-        <div>
+        <div className="movies-container">
             <h1> My Movies</h1>
             <hr/>
             <h2 className="titles"> Titles</h2>

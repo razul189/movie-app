@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useHistory, useRouteMatch } from 'react-router-dom';
+import './stylesheets/MovieDetail.css'
 
 const MovieDetail = () => {
   const history = useHistory()
@@ -28,7 +29,7 @@ const MovieDetail = () => {
   }
 
   return (
-    <div>
+    <div className="movie-detail-container">
       <h1>Title: {movie.title}</h1>
       <h2>Directors: {movie.director}</h2>
       <img src={movie.imgUrl} alt="whoops" />

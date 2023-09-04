@@ -5,6 +5,9 @@ import Home from './Home'
 import Movies from './Movies'
 import NavBar from './NavBar'
 import MovieDetail from './MovieDetail'
+import MovieForm from './MovieForm'
+import About from './About'
+
 
 const App = () => {
   return (
@@ -14,6 +17,7 @@ const App = () => {
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/movies" component={() => <Movies />} />
+          <Route exact path= "/movies/new" component={MovieForm}/>
           <Route exact path="/movies/:id" component={() => <MovieDetail />} />
         </Switch>
       </div>

@@ -1,7 +1,7 @@
 
 .home-container {
     text-align: center;
-    color: white;  /* Setting the text color to white */
+    color: white; 
   }
   
   .home-title {
@@ -30,7 +30,6 @@
     font-size: 18px;
   }
   
-  /* Additional Reset */
   body {
     margin: 0;
     padding: 0;

@@ -1,0 +1,20 @@
+    .movie-detail-container {
+    text-align: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .movie-detail-title {
+    font-size: 60px;
+    margin-bottom: 20px;
+  }
+  
+  .movie-detail-subtitle {
+    font-size: 45px;
+    margin-bottom: 20px;
+  }
+  
+  .movie-detail-text {
+    font-size: 24px;
+  }
+  
