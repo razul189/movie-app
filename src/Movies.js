@@ -27,13 +27,13 @@ const Movies = () => {
     
     return (
         <div className="movies-container">
-            <h1> My Movies</h1>
+            <h1 className="movies-title"> My Movies </h1> {/* updated className here */}
             <hr/>
-            <h2 className="titles"> Titles</h2>
+            <h2 className="movies-list"> Titles</h2> {/* updated className here */}
             {moviesList}
         </div>
     )
-}
+    }    
 
 export default Movies
 
