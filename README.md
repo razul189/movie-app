@@ -21,13 +21,13 @@ Film-Folio is a web application built for movie lovers to keep track of their fa
 1. Clone the repository
 
 ```
-git clone https://github.com/razul189/filmFolio.git
+git clone https://github.com/razul189/movie-app.git
 ```
 
 2. Navigate to the project directory
 
 ```
-cd filmFolio
+cd movie-app
 ```
 
 3. Install dependencies
