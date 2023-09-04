@@ -1,4 +1,5 @@
 import React from 'react'
+import './stylesheets/About.css'
 
 const About = () => {
     return (
@@ -11,13 +12,13 @@ const About = () => {
                 component-based architecture, reusability, and the ability to manage states effortlessly.
             </p>
             
-            <h2 className="about-subtitle">filmFolio</h2>
+            <h2 className="about-subtitle">FilmFolio</h2>
             <div className="divider"></div>
             <p className="about-text">
                 This was created for movie lovers like myself to keep track of their favorite movies! Whether you're looking for 
-                action-packed blockbusters, thought-provoking films, or timeless classics, I've got you covered. Just go ahead and 
-                add them on! Thank you for checking out filmFolio!
+                action-packed blockbusters, thought-provoking films, or timeless classics, I've got you covered!
             </p>
+            <h3>Thank you for checking out FilmFolio!</h3>
         </div>
     );
 }
