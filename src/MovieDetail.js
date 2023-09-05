@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { useHistory, useRouteMatch } from 'react-router-dom';
+import React, { useEffect, useState } from 'react'
+import { useHistory, useRouteMatch } from 'react-router-dom'
 import './stylesheets/MovieDetail.css'
 
-const MovieDetail = () => {
-  const history = useHistory()
-  const match = useRouteMatch()
-  const id = match.params.id // Grabbing the id from the route match
-  const [movie, setMovie] = useState(null)
+const MovieDetail = ({ onDeleteMovie }) => {
+  const history = useHistory();
+  const match = useRouteMatch();
+  const id = match.params.id;
+  const [movie, setMovie] = useState(null);
 
   useEffect(() => {
     fetch(`http://localhost:3000/movies/${id}`)
@@ -19,9 +19,11 @@ const MovieDetail = () => {
   const handleDelete = () => {
     fetch(`http://localhost:3000/movies/${id}`, {
       method: 'DELETE',
-    }).then(() => {
-      history.push('/movies');
-    });
+    })
+      .then(() => {
+        onDeleteMovie(id);
+        history.push('/movies');
+      });
   };
 
   if (!movie) {
@@ -29,18 +31,19 @@ const MovieDetail = () => {
   }
 
   return (
-    <div className="movie-detail-container">
-      <h1>Title: {movie.title}</h1>
-      <h2>Directors: {movie.director}</h2>
-      <img src={movie.imgUrl} alt="whoops" />
-      <p>Synopsis: {movie.synopsis}</p>
-      <button onClick={handleDelete}>Delete</button>
-    </div>
-  );
+        <div className="movie-detail-container">
+          <h1>Title: {movie.title}</h1>
+          <h2>Directors: {movie.director}</h2>
+          <img src={movie.imgUrl} alt="whoops" />
+          <p>Synopsis: {movie.synopsis}</p>
+          <button onClick={handleDelete}>Delete</button>
+        </div>
+      );
+
+  
 };
 
-export default MovieDetail
-
+export default MovieDetail;
 
 // movie details for db.json
 // {
