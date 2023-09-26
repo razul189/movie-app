@@ -1,20 +1,8 @@
 import './stylesheets/Movies.css'
-import React, {useEffect, useState} from "react"
+import React from "react"
 import {Link} from 'react-router-dom'
 
-const Movies = () => {
-    
-    const [movies, setMovies] = useState([])
-
-    useEffect(() => {
-        fetch ("http://localhost:3000/movies")
-        .then(res => res.json())
-        .then(data => {
-            console.log(data)
-            setMovies(data)
-           })
-    }, [])
-
+const Movies = ({movies}) => {
     
     const moviesList = movies.map((movie) => ( 
     <div key={movie.id}>

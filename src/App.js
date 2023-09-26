@@ -1,12 +1,12 @@
-import React, { useEffect, useState } from 'react';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import './stylesheets/App.css';
-import Home from './Home';
-import Movies from './Movies';
-import NavBar from './NavBar';
-import MovieDetail from './MovieDetail';
-import MovieForm from './MovieForm';
-import About from './About';
+import React, { useEffect, useState } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import './stylesheets/App.css'
+import Home from './Home'
+import Movies from './Movies'
+import NavBar from './NavBar'
+import MovieDetail from './MovieDetail'
+import MovieForm from './MovieForm'
+import About from './About'
 
 const App = () => {
   const [movies, setMovies] = useState([]);
@@ -37,7 +37,7 @@ const App = () => {
           <Route exact path="/movies" render={() => <Movies movies={movies} />} />
           <Route exact path="/movies/new" render={() => <MovieForm onAddNewMovie={handleAddNewMovie} />} />
           <Route exact path="/movies/:id" render={() => <MovieDetail onDeleteMovie={handleDeleteMovie} />} />
-          <Route path="/about" component={About} />
+          <Route exact path="/about" component={About} />
         </Switch>
       </div>
     </Router>

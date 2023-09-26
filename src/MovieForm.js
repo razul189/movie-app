@@ -16,11 +16,11 @@ const MovieForm = ({ onAddNewMovie }) => {
     setMovie({
       ...movie,
       [e.target.name]: e.target.value,
-    });
-  };
+    })
+  }
 
   const handleSubmit = (e) => {
-    e.preventDefault();
+    e.preventDefault()
     fetch('http://localhost:3000/movies', {
       method: 'POST',
       headers: {
@@ -30,11 +30,11 @@ const MovieForm = ({ onAddNewMovie }) => {
     })
       .then((response) => response.json())
       .then((data) => {
-        onAddNewMovie(data);
-        history.push('/movies');
+        onAddNewMovie(data)
+        history.push('/movies')
       })
       .catch((error) => {
-        console.error('Error:', error);
+        console.error('Error:', error)
       });
   };
 
